@@ -248,10 +248,9 @@ export default function VenueSection() {
                   
                   {/* Effect: Glass Shimmer sweep */}
                   <div
-                    className="absolute -inset-1 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 group-hover:translate-x-full pointer-events-none"
-                    style={{
-                      via: isDark ? "white/10" : "white/60"
-                    }}
+                    className={`absolute -inset-1 bg-gradient-to-r from-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 group-hover:translate-x-full pointer-events-none ${
+                      isDark ? "via-white/10" : "via-white/60"
+                    }`}
                   />
 
                   <div style={{ position: "relative", zIndex: 10 }}>
